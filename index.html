@@ -124,14 +124,14 @@
             svgLeft.append("rect").attr("x", x("Revenue")).attr("y", y(154.2)).attr("width", x.bandwidth()).attr("height", y(140) - y(154.2)).attr("fill", "#4a71be");
             addText(svgLeft, x("Revenue") + x.bandwidth()/2, y(154.2) + 20, "$154.2M", null, "white", "11px");
 
-            svgLeft.append("rect").attr("x", x("Expenditure")).attr("y", y(159.2)).attr("width", x.bandwidth()).attr("height", y(140) - y(156.4)).attr("fill", "#54ad66");
+            svgLeft.append("rect").attr("x", x("Expenditure")).attr("y", y(159.2)).attr("width", x.bandwidth()).attr("height", y(140) - y(159.2)).attr("fill", "#54ad66");
             addText(svgLeft, x("Expenditure") + x.bandwidth()/2, y(159.2) + 20, "$159.2M", null, "white", "11px");
 
-            svgLeft.append("rect").attr("x", x("Expenditure")).attr("y", y(159.2)).attr("width", x.bandwidth()).attr("height", y(156.4) - y(159.2)).attr("fill", "#e2efda").attr("stroke", "#333").attr("stroke-dasharray", "4");
-            addText(svgLeft, x("Expenditure") + x.bandwidth()/2, y(159.2) + 14, "Mid-year Cut", "$2.8M", "#333", "10px");
+            svgLeft.append("rect").attr("x", x("Expenditure")).attr("y", y(159.2)).attr("width", x.bandwidth()).attr("height", y(159.2) - y(162).attr("fill", "#e2efda").attr("stroke", "#333").attr("stroke-dasharray", "4");
+            addText(svgLeft, x("Expenditure") + x.bandwidth()/2, y(162) + 14, "Mid-year Cut", "$2.8M", "#333", "10px");
 
-            // Fixed Arrow: Stops cleanly at 156.4 base
-            drawArrow(svgLeft, x("Revenue") + x.bandwidth(), y(154.2), y(156.4), "$5.0M", "Gap");
+            // Fixed Arrow: Stops cleanly at 159.2 base
+            drawArrow(svgLeft, x("Revenue") + x.bandwidth(), y(154.2), y(159.2), "$5.0M", "Gap");
 
 
             // --- 2. Current State (2026-27 As is) ---
